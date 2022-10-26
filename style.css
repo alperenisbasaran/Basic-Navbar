@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+  box-sizing: border-box; /* body'e bu property'i verirsen verdiğin padding ve border element width ve height'ına dahil olur. */
+}
 .flex-container {
     background-color: pink;
     display: flex;
@@ -16,7 +20,7 @@
 
  .flex-item {
     padding-top: 30px;
-    padding-bottom:30px;
+    padding-bottom:30px; /* bir tane daha parent div oluşturup display flex verirsen random padding vermen gerekmez. */
     padding-left: 5px;
     padding-right: 25px;
     margin-top: 0px;
